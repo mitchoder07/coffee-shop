@@ -648,10 +648,12 @@ header .navbar {
   }
 
   .menu-section .menu-list .menu-item,
-  .gallery-section .gallery-list .gallery-item {
+  .gallery-section .gallery-list .gallery-item,
+  .gallery-section .gallery-item .gallery-image {
     width: 100%;
-    height: 30rem;
+    height: 25rem;
   }
+
 
   .reviews-section .slider-wrapper {
     margin: 0 0 1.9rem;
