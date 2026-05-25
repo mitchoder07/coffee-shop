@@ -1,3 +1,4 @@
+const navLinks = document.querySelectorAll(".nav-menu .nav-link");
 const menuOpenButton = document.querySelector("#menu-open-button");
 const menuCloseButton = document.querySelector("#menu-close-button");
 const navMenu = document.querySelector(".nav-menu");          // <-- the menu container
@@ -9,6 +10,11 @@ menuOpenButton.addEventListener("click", () => {
 // Close menu when X is clicked (always close, never toggle)
 menuCloseButton.addEventListener("click", () => {
   document.body.classList.remove("show-mobile-menu");
+});
+
+// Close menu when the nav link is clicked
+navLinks.forEach(link => {
+    link.addEventListener("click", () => menuOpenButton.click());
 });
 
 // Close menu when clicking anywhere outside the menu
